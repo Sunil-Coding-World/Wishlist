@@ -1,0 +1,29 @@
+.modelbackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 999;
+  }
+  
+  .modelcontainer {
+    background-color: #fff;
+    padding: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modelbackground:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modelcontainer:hover {
+    opacity: 1;
+  }
+  

@@ -1,0 +1,46 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  .header{
+    margin-top:60px;
+  }
+  
+  .input-add{
+    text-align:centre;
+  }
+  
+  /* Style the input */
+  input {
+    border: none;
+    border-radius: 0;
+    width: 30%;
+    align:center;
+    padding: 10px;
+    font-size: 16px;
+    text-align:center;
+    /* margin-top:30px; */
+  }
+  
+  h2{
+  color:  #69f542;
+  }
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 9px;
+    margin-left:10px;
+    width: 9%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    color:white;
+    background-color: #fddb3a;
+  }

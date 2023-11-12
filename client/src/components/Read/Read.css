@@ -1,0 +1,47 @@
+h3{
+  color: white;
+}
+
+.read-container {
+  padding: 20px;
+}
+
+.read-heading {
+  text-align: center;
+}
+
+.wish-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.read-item {
+  background-color: #384142;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.read-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.btn {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #69f542;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
