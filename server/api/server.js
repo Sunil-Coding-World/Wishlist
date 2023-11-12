@@ -4,11 +4,11 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 
 // Uncomment to allow write operations
-// const fs = require('fs')
-// const path = require('path')
-// const filePath = path.join('wishes.json')
-// const data = fs.readFileSync(filePath, "utf-8");
-// const wishes = JSON.parse(data);
+const fs = require('fs')
+const path = require('path')
+const filePath = path.join('wishes.json')
+const data = fs.readFileSync(filePath, "utf-8");
+const wishes = JSON.parse(data);
 // const router = jsonServer.router(wishes)
 
 // Comment out to allow write operations
@@ -22,7 +22,7 @@ server.use(jsonServer.rewriter({
     '/api/*': '/$1',
 }))
 server.use(router)
-server.listen(3000, () => {
+server.listen(8000, () => {
     console.log('JSON Server is running')
 })
 
