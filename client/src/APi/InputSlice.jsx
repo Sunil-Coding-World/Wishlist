@@ -6,7 +6,7 @@ export const createWish = createAsyncThunk(
   "createWish",
   async (data, { rejectWithValue }) => {
     try {
-      const response = await fetch("http://localhost:8000/wishes", {
+      const response = await fetch("https://wishlist-server-ashen.vercel.app/wishes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export const showWish = createAsyncThunk(
   "showWish",
   async (data, { rejectWithValue }) => {
     try {
-      const response = await fetch("http://localhost:8000/wishes")
+      const response = await fetch("https://wishlist-server-ashen.vercel.app/wishes")
       const result = await response.json()
       return result
     } catch (err) {
@@ -40,7 +40,7 @@ export const deleteWish = createAsyncThunk(
   "deleteWish",
   async (id, { rejectWithValue }) => {
     try {
-      const response = await fetch(`http://localhost:8000/wishes/${id}`, {
+      const response = await fetch(`https://wishlist-server-ashen.vercel.app/wishes/${id}`, {
         method: "DELETE",
       })
       const result = await response.json()
@@ -57,7 +57,7 @@ export const updatewish = createAsyncThunk(
   async (data, { rejectWithValue }) => {
     try {
       console.log(data)
-      const response = await fetch(`http://localhost:8000/wishes/${data.id}`, {
+      const response = await fetch(`https://wishlist-server-ashen.vercel.app/wishes/${data.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
